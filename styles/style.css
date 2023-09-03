@@ -6,6 +6,10 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
+.text-light-gray{
+     color:#727272;
+
+}
 
 .btn-primary {
     color: #FFF;
@@ -59,23 +63,6 @@ nav li a {
     font-size: 4rem;
     color: #131313;
 }
-@media screen and (max-width:576px){
-    header{
-        padding:20px;
-    }
-    nav{
-        flex-direction:column;
-    }
-}
-/* tablet or medium devices */
-@media screen and (min-width:576px)and (max-width:960px){
-    header{
-        padding:50px;
-    }
-    nav {
-        flex-direction: column;
-    }
-}
 
  /* main  styles*/
 main{
@@ -107,4 +94,33 @@ main{
 .teams-title .text-features{
     color: #FF900E;
     font-weight: 700;
+}
+
+
+/* responsive mobile */
+  /* mobile device */
+@media screen and (max-width:576px){
+    header{
+        padding:20px;
+    }
+    nav, .teams-container{
+        flex-direction:column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right:20px;
+    }
+}
+/* tablet or medium devices */
+@media screen and (min-width:576px)and (max-width:960px){
+    header{
+        padding:50px;
+    }
+    nav {
+        flex-direction: column;
+    }
 }
